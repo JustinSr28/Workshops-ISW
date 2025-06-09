@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.noticia-elefantes:hover {
+    transform: scale(1.01);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.noticia-elefantes {
+    position: relative;
+    width: 600px;
+    font-family: Arial, sans-serif;
+}
+
+.noticia-elefantes img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.categoria {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.titulo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
