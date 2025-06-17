@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+
+.valoraciones {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+
+.seccion-imagenes {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.amd-radeon-section {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('../img/amd.png') no-repeat center center/cover;
+    min-height: 70vh;
+}
