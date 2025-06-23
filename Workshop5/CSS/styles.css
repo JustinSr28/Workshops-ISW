@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CSS VARIABLES*/
+:root {
+    --Principal_color: #4CAF50; 
+    --tamanoPrincipal: 1.2em;
+}
+
+/*ID*/
+#textoFinal {
+    font-family: 'Arial', sans-serif;
+    color: grey;
+    font-size: var(--tamanoPrincipal);
+}
+
+.lead {
+    font-family: 'Arial', sans-serif;
+    color: grey;
+}
+/*Element*/
+body {
+    background-color: #f0f0f0;
+}
+
+/* Group */
+h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/*Class*/
+body.titulo {
+    font-family: 'Arial', sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Child*/
+section.valoraciones > div > div > div h3 {
+    font-family: 'Times New Roman', sans-serif;
+}
+
+/*Combined*/
+p.textosValoraciones::first-letter {
+    font-weight: bold;
+}
+
+.amd-radeon-section {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('../img/amd.png') no-repeat center center;
+        min-height: 70vh;
+}
+
+/*Attribute*/
+img[src = "img/laptopGamer.png"] {
+    border: 2px solid black;
+}
+
+/*Pseudo Classes*/
+.btn.btn-info:hover {
+    background-color: red !important;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+/*Pseudo Elements*/
+
+h2.cssElemento::first-letter {
+    font-variant: small-caps;
+    background-color: grey;
+}
+
+
