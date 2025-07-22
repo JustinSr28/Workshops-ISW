@@ -5,8 +5,9 @@ body {
 
 main {
     width: 80%;
+    height: 50%;
     margin: 50px auto; /* 50px arriba/abajo, centrado horizontal */
-    border: 2px solid blue;
+    border: 3px solid #428bca;
     box-sizing: border-box; /* para que el padding no aumente el ancho total */
 }
 
@@ -64,10 +65,39 @@ main {
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
+    margin-bottom: 70px; /* Espacio debajo del botón */
 }
 
     .btnLogin:hover {
         background-color: #3071a9;
     }
 
-       
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ccc; /*  aquí se agrega la línea */
+    font-size: 14px;
+    color: #666;
+    background: none;
+    margin-top: 250px;
+}
+
+    footer p {
+        margin: 30px 0;
+    }
+
+
+    footer nav a {
+        margin: 0 8px; /* Espacio horizontal entre links */
+        text-decoration: none; /* Quita subrayado */
+        color: #666; /* Color igual al resto del footer */
+    }
+
+        footer nav a:hover {
+            text-decoration: underline; /* Subraya el link al pasar el mouse para indicar interactividad */
+        }

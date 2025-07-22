@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -84,92 +83,134 @@ nav#Navegacion {
     overflow: hidden; /* Oculta el desbordamiento de la imagen */
 }
 
-
 main {
-    max-width: 1000px; /* Tamaño del contenedor main*/
+    max-width: 600px; /* Tamaño del contenedor main*/
     margin: 50px auto; /* distnacia entre el main y header */
     text-align: center;
-    font-family: 'Roboto', sans-serif;
 }
 
     main h1 {
-        font-size: 46px;
+        font-family: 'Roboto', sans-serif;
         font-weight: 200;
-        letter-spacing: 2px;
+        font-size: 30px;
+        letter-spacing: 3px;
         color: grey;
         margin-bottom: 20px;
         border-bottom: 2px solid #ccc;
-        display: inline-block;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
+        display: block; /* DisplayBlock se adapta al texto*/
+        width: 300px;
+        margin: 0 auto 20px;
+        text-align: center;
     }
 
-.rides-actions {
-    text-align: right;
-    margin: 20px 0;
+
+.edit-form {
+    width: 600px; /* Ancho del formulario */
+    margin-top: 50px; /* Espacio entre el título y el formulario */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #357ebd;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
+.form-row {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; /* se colapsan verticalmente */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+    .form-group label {
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+    }
+
+
+#Countries {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* para alinear los labels e inputs a la izquierda */
 }
 
 
-.new-ride {
-    background-color: #428bca;
-    color: white;
-    border: 1px solid #357ebd;
-    padding: 10px 30px;
-    font-size: 16px;
-    cursor: pointer;
+    #Countries .form-group {
+        display: flex;
+        flex-direction: column;
+        flex: 1; /* que cada input ocupe el mismo ancho posible */
+    }
+
+    #Countries label {
+        margin-bottom: 5px;
+        font-weight: normal;
+    }
+
+.form-group select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
     border-radius: 2px;
 }
 
-    .new-ride:hover {
-        background-color: #3071a9;
+
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px; /* o el espacio que desees arriba */
+}
+
+    .form-actions a {
+        color: #007bff; /* azul tipo link */
+        text-decoration: none;
+        font-size: 14px;
     }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
+        .form-actions a:hover {
+            text-decoration: underline;
+        }
 
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-th {
-    background-color: #f2f2f2;
-    text-align: center;
-}
-
-td a {
-    color: #337ab7;
-    text-decoration: none;
-}
-
-    td a:hover {
-        text-decoration: underline;
+    .form-actions button {
+        background-color: #337ab7; /* azul similar al de la imagen */
+        color: white;
+        border: 1px solid #2e6da4;
+        padding: 8px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 14px;
+        height: 40px; /* Altura del link */
+        width: 200px; /* Ancho del link */
     }
+
+        .form-actions button:hover {
+            background-color: #286090; /* tono más oscuro al hover */
+        }
+
 
 
 
 footer {
+    margin-top: 100px; /* Espacio entre el main y el footer */
     text-align: center;
     padding: 20px;
     border-top: 1px solid #ccc; /*  aquí se agrega la línea */
     font-size: 14px;
     color: #666;
     background: none;
-    margin-top: 250px; 
 }
 
     footer p {
@@ -186,3 +227,7 @@ footer {
         footer nav a:hover {
             text-decoration: underline; /* Subraya el link al pasar el mouse para indicar interactividad */
         }
+
+
+
+  

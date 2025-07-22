@@ -86,13 +86,17 @@ nav#Navegacion {
 
 
 main {
-    max-width: 1000px; /* Tamaño del contenedor main*/
-    margin: 50px auto; /* distnacia entre el main y header */
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column; /* Se establece direccion porque el logo va arriba*/
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto; /* <-- esto centra el header mismo */
 }
 
     main h1 {
+        margin-top: 20px;
         font-size: 46px;
         font-weight: 200;
         letter-spacing: 2px;
@@ -103,6 +107,51 @@ main {
         padding-bottom: 10px;
     }
 
+.contenedor {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra ambos hijos horizontalmente */
+    width: 90%;
+    padding: 10px 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: auto;
+    margin-top: 20px;
+}
+
+
+
+.form-group {
+    display: flex;
+    flex: 1;
+    min-width: 150px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+    .form-group label {
+        margin-left: 200px; /* Espacio entre el borde izquierdo y el label */
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+        margin-left: 4px; /* Espacio entre el label y el input */
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        background-color: transparent;
+    }
+
 .rides-actions {
     text-align: right;
     margin: 20px 0;
@@ -111,6 +160,7 @@ main {
 .btn {
     display: inline-block;
     padding: 8px 16px;
+    margin-left: 100px; /* Espacio entre el borde izquierdo y el botón */
     background-color: #357ebd;
     color: white;
     text-decoration: none;
@@ -120,56 +170,82 @@ main {
     cursor: pointer;
 }
 
-
-.new-ride {
-    background-color: #428bca;
-    color: white;
-    border: 1px solid #357ebd;
-    padding: 10px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 2px;
+#Labeldays {
+    margin: 10px; /* Quita margenes previos */
+    margin-left: -100px; /* Espacio entre el borde izquierdo y el label de los días de la semana */
 }
 
-    .new-ride:hover {
-        background-color: #3071a9;
-    }
 
-table {
+.days {
+    display: flex;
+    align-items: center; /* Centra verticalmente el label y los checkboxes */
+    margin-left: 40px; /* Espacio entre el borde izquierdo y el label de los días de la semana */
+    gap: 38px; /* Espacio entre cada elemento */
+    margin-top: 20px; /* Separación respecto al contenedor superior */
+    flex-wrap: wrap; /* Si en pantallas pequeñas no cabe, se bajan ordenados */
+}
+
+
+.rides-results {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.rides-label {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.rides-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-th {
-    background-color: #f2f2f2;
-    text-align: center;
-}
-
-td a {
-    color: #337ab7;
-    text-decoration: none;
-}
-
-    td a:hover {
-        text-decoration: underline;
+    .rides-table th,
+    .rides-table td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
     }
 
+    .rides-table th {
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+
+    .rides-table a {
+        color: #357ebd;
+        text-decoration: none;
+    }
+
+        .rides-table a:hover {
+            text-decoration: underline;
+        }
+
+.map-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
+    .map-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
 
 footer {
+    margin-top: 100px; /* Espacio entre el main y el footer */
     text-align: center;
     padding: 20px;
     border-top: 1px solid #ccc; /*  aquí se agrega la línea */
     font-size: 14px;
     color: #666;
     background: none;
-    margin-top: 250px; 
 }
 
     footer p {
